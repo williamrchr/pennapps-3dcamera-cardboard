@@ -1,0 +1,18 @@
+.row {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vidDiv {
+    margin: 0px auto;
+    width: 500px;
+    height: 375px;
+}
+
+.vid {
+    width: 500px;
+    height: 375px;
+    background-color: #c7c7c7;
+}
