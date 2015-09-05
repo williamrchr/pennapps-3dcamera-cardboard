@@ -60,14 +60,9 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-    <section class="bg-dark">
-        <div class="container">
-            <div class="row">
-                streamer
-            </div>
-        </div>
-    </section>
+    <div style="margin-top: 70px;">
+        <iframe src="//aka.ms/azuremediaplayeriframe?url=http%3A%2F%2Fdeepstream.streaming.mediaservices.windows.net%2F344af404-a649-4e7d-bad8-6e7484370472%2Fa04cac64-76d0-4f1d-b19c-b4677d2d831c.ism%2FManifest&autoplay=false" name="azuremediaplayer" scrolling="no" frameborder="no" align="center" height="280px" width="500px" allowfullscreen></iframe>
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -82,6 +77,33 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+
+    <script>
+        var myOptions = {
+            "nativeControlsForTouch": false,
+            autoplay: false,
+            controls: true,
+            width: "640",
+            height: "400",
+            poster: ""  // Which image should we display before the video plays?
+        };
+
+        // Find the player on the page and set the options above.
+        // Needs the ID of the div with the media player, as well as an object for all of the options
+        var myPlayer = amp("azuremediaplayer", myOptions);
+
+        // Which video should the player use?
+        myPlayer.src([
+            {
+                src: "http://amssamples.streaming.mediaservices.windows.net/91492735-c523-432b-ba01-faba6c2206a2/AzureMediaServicesPromo.ism/manifest", type: "application/vnd.ms-sstr+xml"
+            }
+        ]);
+
+        // Fallback options for video playing
+        amp.options.flashSS.swf       = "//amp.azure.net/libs/amp/1.0.0/techs/StrobeMediaPlayback.2.0.swf";
+        amp.options.flashSS.plugin    = "//amp.azure.net/libs/amp/1.0.0/techs/MSAdaptiveStreamingPlugin-osmf2.0.swf";
+        amp.options.silverlightSS.xap = "//amp.azure.net/libs/amp/1.0.0/techs/SmoothStreamingPlayer.xap";
+    </script>
 
 </body>
 

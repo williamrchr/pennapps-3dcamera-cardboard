@@ -1,0 +1,55 @@
+html {
+	min-height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+.full-page {
+	position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+}
+
+.main {
+	margin-top: 50px !important;
+}
+
+.row {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vidDiv {
+    margin: 0;
+    padding: 0;
+    width: 480px;
+    overflow: hidden;
+}
+
+.vid {
+    /*width: 480px;*/
+    /*height: 600px;*/
+}
+
+.vidDiv {
+	height: 600px;
+}
+
+#videoLeft {
+	margin-left: -80px;
+}
+
+#videoRight {
+	margin-left: -80px;
+}
+
+#container .sourcebtn {
+	float: right;
+}
