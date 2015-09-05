@@ -1,5 +1,5 @@
-var videol = document.querySelector("#videoElement");
-var videor = document.querySelector("#videoElement2");
+var videol = document.querySelector("#videoLeft");
+var videor = document.querySelector("#videoRight");
 
 var buttonl = document.getElementById("btnLeft");
 var buttonr = document.getElementById("btnRight");
