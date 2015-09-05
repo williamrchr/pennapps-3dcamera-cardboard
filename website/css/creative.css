@@ -482,3 +482,7 @@ body {
 .center-text {
     text-align: center;
 }
+
+.full-page {
+    min-height: 100%;
+}
